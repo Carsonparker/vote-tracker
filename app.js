@@ -1,7 +1,7 @@
 // array of photo objects : photo collect []
+var = mountainPhoto []
 
-
-function Photo(site, path) {
+function MoiuntainPhoto(name, path) {
 // sites path and votes property
 // pushing this object thats being created into the function
 
