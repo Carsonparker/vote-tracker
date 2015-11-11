@@ -58,6 +58,16 @@ var wow = new GamePhoto('wow', 'images/wow.png')
 
 tracker.displayNewImages();
 
+var ctx = document.getElementById("games").getContext("2d");
+var myPieChart = new Chart(ctx).Pie(data, {
+  //String - The colour of each segment stroke
+    segmentStrokeColor : "#fff",
+  //Number - Amount of animation steps
+    animationSteps : 100,
+    //String - Animation easing effect
+    animationEasing : "easeOutBounce",
+});
+
 var data = [
     {
         value: 300,
@@ -78,4 +88,3 @@ var data = [
         label: "Yellow"
     }
 ]
-
