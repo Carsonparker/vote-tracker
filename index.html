@@ -3,19 +3,30 @@
   <head>
     <title>Pick a game!</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="skeleton.css">
     <link rel="stylesheet" href="style.css">
     <script src="chart.js"></script>
   </head>
   <body>
     <header>
-      <h1>Pick a game, any game! As long as it is one of these two.</h1>
-        <p>Try out my vote tracker. Pick any one of the two photos available and watch as it populates the doughnut chart!</p>
+      <h1 id='header'>Pick a game, any game! As long as it is one of these two.</h1>
     </header>
     <main>
-      <img id='displayImg1' src='' alt='Image One'>
-      <img id='displayImg2' src='' alt='Image Two'>
+
+      <div class='row'>
+        <div class='one-half column center' id='leftPhoto'>
+          <img id='displayImg1' class='votePhoto' src='' alt='Image One'>
+        </div>
+        <div class='one-half column center' id='rightPhoto'>
+          <img id='displayImg2' class='votePhoto' src='' alt='Image Two'>
+        </div>
+      </div>
     </main>
-    <canvas id="games" width="600" height="600"></canvas>
+    <canvas height="400" width="400" id="games"></canvas>
+    <footer>
+      <h4 id='footer'>Try out my vote tracker. Pick any one of the two photos available and watch as it populates the doughnut chart!</h4>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>

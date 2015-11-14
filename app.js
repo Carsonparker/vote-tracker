@@ -97,4 +97,3 @@ tracker.displayNewImages();
 var canvas = document.getElementById("games").getContext("2d");
 
 var myChart = new Chart(canvas).Doughnut(data);
-
